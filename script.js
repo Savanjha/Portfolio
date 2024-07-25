@@ -97,3 +97,16 @@ pages.forEach((_, index) => {
 
     }, (index +1) + 200 + 2100)
 })
+
+function sendEmail() {
+    sendEmail.send({
+        Host : "savanjha24@gmail.com",
+        Username : "savanjha24@gmail.com",
+        Password : "password",
+        To : 'savanjha24@gmail.com',
+        From : document.getElementById("email").value,
+        subjest : "New contact From Enquiry",
+        Body : "Name: " + document
+
+    })
+}
